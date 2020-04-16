@@ -16,7 +16,7 @@ def hello():
 @app.route('/time')
 def get_time():
     """Return the current time as a JSON string."""
-    result = jsonify([{'current_time': str(datetime.now())}])
+    result = jsonify(str(datetime.now()))
     return result
 
 
