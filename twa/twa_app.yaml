@@ -1,2 +1,10 @@
 service: default
 runtime: nodejs10
+
+handlers:
+- url: /
+  static_files: dist/twa/index.html
+  upload: dist/twa/index.html
+
+- url: /
+  static_dir: dist/twa
