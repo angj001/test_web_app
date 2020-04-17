@@ -15,4 +15,7 @@ export class ShowtimeComponent implements OnInit {
     this.backend.getCurrentTime().subscribe( data => this.time_now = data );
   }
 
+  updateTime(): void {
+    this.backend.getCurrentTime().subscribe( data => this.time_now = data );
+  }
 }
